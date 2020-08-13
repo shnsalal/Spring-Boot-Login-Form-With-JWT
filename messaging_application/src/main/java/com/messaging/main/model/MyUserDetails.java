@@ -1,10 +1,11 @@
 package com.messaging.main.model;
 
 import java.util.Collection;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 public class MyUserDetails implements UserDetails {
@@ -13,15 +14,18 @@ public class MyUserDetails implements UserDetails {
 	
 	private String username;
 	private String password;
-	private boolean active;
-	private List<GrantedAuthority> authorities;
+	private Set<GrantedAuthority> authorities;
 	
 	public MyUserDetails(User user) {
 		this.username = user.getUsername();
 		this.password = user.getPassword();
-		this.setActive(user.isActive());
-		String[] userRole = user.getRoles().stream().map(role -> role.getRole()).toArray(String[]::new);
-		authorities = AuthorityUtils.createAuthorityList(userRole) ;
+//		String[] userRole = user.getRoles().stream().map(role -> role.getRole()).toArray(String[]::new);
+//		authorities = AuthorityUtils.createAuthorityList(userRole) ;
+		
+		authorities = new HashSet<>();
+		for (Role role : user.getRoles()) {
+			authorities.add(new SimpleGrantedAuthority(role.getRole()));
+		}
 	}
 
 	@Override
@@ -64,14 +68,6 @@ public class MyUserDetails implements UserDetails {
 	public boolean isEnabled() {
 		// TODO Auto-generated method stub
 		return true;
-	}
-
-	public boolean isActive() {
-		return active;
-	}
-
-	public void setActive(boolean active) {
-		this.active = active;
 	}
 
 }

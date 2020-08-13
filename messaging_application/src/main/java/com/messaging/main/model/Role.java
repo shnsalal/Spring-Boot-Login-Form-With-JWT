@@ -1,6 +1,6 @@
 package com.messaging.main.model;
 
-import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -33,7 +33,7 @@ public class Role {
 			joinColumns = @JoinColumn(name = "role_id", referencedColumnName = "id"),
 			inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id")
 			)
-	private List<User> users;
+	private Set<User> users;
 	
 	public Integer getId() {
 		return id;
@@ -47,10 +47,10 @@ public class Role {
 	public void setRole(String role) {
 		this.role = role;
 	}
-	public List<User> getUsers() {
+	public Set<User> getUsers() {
 		return users;
 	}
-	public void setUsers(List<User> users) {
+	public void setUsers(Set<User> users) {
 		this.users = users;
 	}
 }

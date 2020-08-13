@@ -4,5 +4,5 @@ import com.messaging.main.model.Role;
 
 
 public interface RoleService {
-	public Role findRoleById(int id);
+	public Role findByRole(String role);
 }
