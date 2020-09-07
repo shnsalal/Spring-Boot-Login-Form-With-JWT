@@ -1,4 +1,4 @@
-package com.messaging.main.exception;
+package com.darkroom.main.exception;
 
 import java.util.ArrayList;
 import java.util.List;

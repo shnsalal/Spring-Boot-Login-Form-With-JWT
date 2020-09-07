@@ -1,11 +1,11 @@
-package com.messaging.main.Service.ServiceImpl;
+package com.darkroom.main.Service.ServiceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.messaging.main.Service.RoleService;
-import com.messaging.main.model.Role;
-import com.messaging.main.repository.RoleRepository;
+import com.darkroom.main.Service.RoleService;
+import com.darkroom.main.model.Role;
+import com.darkroom.main.repository.RoleRepository;
 
 
 @Service

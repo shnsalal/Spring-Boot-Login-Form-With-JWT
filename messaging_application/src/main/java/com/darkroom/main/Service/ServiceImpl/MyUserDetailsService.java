@@ -1,4 +1,4 @@
-package com.messaging.main.Service.ServiceImpl;
+package com.darkroom.main.Service.ServiceImpl;
 
 import java.util.Optional;
 
@@ -8,9 +8,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.messaging.main.model.MyUserDetails;
-import com.messaging.main.model.User;
-import com.messaging.main.repository.UserRepository;
+import com.darkroom.main.model.MyUserDetails;
+import com.darkroom.main.model.User;
+import com.darkroom.main.repository.UserRepository;
 
 @Service
 public class MyUserDetailsService implements UserDetailsService{

@@ -1,4 +1,4 @@
-package com.messaging.main.Service.ServiceImpl;
+package com.darkroom.main.Service.ServiceImpl;
 
 import java.util.HashSet;
 import java.util.List;
@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.messaging.main.Service.UserService;
-import com.messaging.main.model.User;
-import com.messaging.main.repository.RoleRepository;
-import com.messaging.main.repository.UserRepository;
+import com.darkroom.main.Service.UserService;
+import com.darkroom.main.model.User;
+import com.darkroom.main.repository.RoleRepository;
+import com.darkroom.main.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {

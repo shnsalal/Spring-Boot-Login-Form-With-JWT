@@ -1,4 +1,4 @@
-package com.messaging.main.controller;
+package com.darkroom.main.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,13 +24,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.messaging.main.Service.UserService;
-import com.messaging.main.exception.CustomException;
-import com.messaging.main.exception.ErrorResponse;
-import com.messaging.main.model.User;
-import com.messaging.main.util.AuthenticationRequest;
-import com.messaging.main.util.AuthenticationResponse;
-import com.messaging.main.util.JwtUtil;
+import com.darkroom.main.Service.UserService;
+import com.darkroom.main.exception.CustomException;
+import com.darkroom.main.exception.ErrorResponse;
+import com.darkroom.main.model.User;
+import com.darkroom.main.util.AuthenticationRequest;
+import com.darkroom.main.util.AuthenticationResponse;
+import com.darkroom.main.util.JwtUtil;
 
 
 

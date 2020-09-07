@@ -1,13 +1,13 @@
-package com.messaging.main;
+package com.darkroom.main;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MessagingApplication {
+public class MainApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MessagingApplication.class, args);
+		SpringApplication.run(MainApplication.class, args);
 	}
 
 }

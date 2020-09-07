@@ -1,6 +1,6 @@
-package com.messaging.main.Service;
+package com.darkroom.main.Service;
 
-import com.messaging.main.model.Role;
+import com.darkroom.main.model.Role;
 
 
 public interface RoleService {

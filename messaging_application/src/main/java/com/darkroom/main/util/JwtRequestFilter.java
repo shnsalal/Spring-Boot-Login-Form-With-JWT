@@ -1,4 +1,4 @@
-package com.messaging.main.util;
+package com.darkroom.main.util;
 
 import java.io.IOException;
 
@@ -15,7 +15,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.messaging.main.Service.ServiceImpl.MyUserDetailsService;
+import com.darkroom.main.Service.ServiceImpl.MyUserDetailsService;
 
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter{

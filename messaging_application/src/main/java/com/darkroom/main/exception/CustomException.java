@@ -1,4 +1,4 @@
-package com.messaging.main.exception;
+package com.darkroom.main.exception;
 
 public class CustomException extends Exception {
 

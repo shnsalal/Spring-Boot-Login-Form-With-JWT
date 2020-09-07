@@ -1,4 +1,4 @@
-package com.messaging.main.model;
+package com.darkroom.main.model;
 
 import java.util.Set;
 

@@ -1,9 +1,9 @@
-package com.messaging.main.Service;
+package com.darkroom.main.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.messaging.main.model.User;
+import com.darkroom.main.model.User;
 
 public interface UserService {
 	public List<User> getUser();

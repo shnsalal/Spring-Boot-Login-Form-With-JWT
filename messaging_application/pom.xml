@@ -8,10 +8,10 @@
 		<version>2.3.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.messaging</groupId>
-	<artifactId>messaging_application</artifactId>
+	<groupId>com.darkroom</groupId>
+	<artifactId>main_application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>messaging_application</name>
+	<name>main_application</name>
 	<description>Spring Boot Course API</description>
 
 	<properties>

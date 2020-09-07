@@ -1,10 +1,10 @@
-package com.messaging.main.repository;
+package com.darkroom.main.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.messaging.main.model.User;
+import com.darkroom.main.model.User;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 	public User findByUsernameAndPassword(String username, String password);

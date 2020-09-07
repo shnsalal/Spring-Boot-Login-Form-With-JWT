@@ -1,4 +1,4 @@
-package com.messaging.main.model;
+package com.darkroom.main.model;
 
 import java.util.Collection;
 import java.util.HashSet;
